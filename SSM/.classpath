@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_6_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jstl/jstl.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/jstl/standard-1.1.2.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/log/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/log/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mybatis/mybatis-3.2.0.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/mybatis/mybatis-spring-1.2.1.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/aopalliance.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-aop-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-aspects-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-beans-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-context-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-context-support-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-core-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-expression-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-jdbc-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-test-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-tx-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-web-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/spring/spring-webmvc-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/sql/mysql-connector-java-5.1.7-bin.jar"/>
+	<classpathentry kind="lib" path="WebRoot/WEB-INF/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/commons-dbcp/commons-dbcp/1.2.2/commons-dbcp-1.2.2.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/commons-pool/commons-pool/1.6/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/springframework/data/spring-data-redis/1.6.2.RELEASE/spring-data-redis-1.6.2.RELEASE.jar" sourcepath="D:/maven/maven-dependcies/org/springframework/data/spring-data-redis/1.6.2.RELEASE/spring-data-redis-1.6.2.RELEASE-sources.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/redis/clients/jedis/2.7.3/jedis-2.7.3.jar" sourcepath="D:/maven/maven-dependcies/redis/clients/jedis/2.7.3/jedis-2.7.3-sources.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/apache/commons/commons-pool2/2.0/commons-pool2-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/com/alibaba/dubbo/2.4.10/dubbo-2.4.10.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/apache/zookeeper/zookeeper/3.4.8/zookeeper-3.4.8.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/com/github/sgroschupf/zkclient/0.1/zkclient-0.1.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/aspectj/aspectjrt/1.8.6/aspectjrt-1.8.6.jar"/>
+	<classpathentry kind="lib" path="D:/maven/maven-dependcies/org/aspectj/aspectjweaver/1.8.7/aspectjweaver-1.8.7.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

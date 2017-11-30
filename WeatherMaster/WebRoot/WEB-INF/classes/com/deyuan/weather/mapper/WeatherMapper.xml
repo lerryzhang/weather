@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.deyuan.weather.dao.WeatherDao">
+	<insert id="insert" parameterType="com.deyuan.weather.model.Weather">
+
+		<selectKey keyProperty="count" resultType="int" order="BEFORE">
+			select count(*) from t_weather where cityName = #{cityName}
+		</selectKey>
+		<if test="count > 0">
+			update t_weather
+			set citydata = #{citydata},lasttime=#{lasttime}
+			where cityName = #{cityName}
+		</if>
+		<if test="count==0">
+			insert into t_weather(cityName,
+			ename,citydata,lasttime)
+			values(#{cityName},#{ename},#{citydata},#{lasttime})
+        </if>
+	</insert>
+
+	<update id="updateByCityName" parameterType="com.deyuan.weather.model.Weather">
+		update t_weather set
+		citydata=#{citydata},lasttime=#{lasttime},ename=#{ename} where
+		cityName=#{cityName}
+    </update>
+
+	<select id="findJson" resultType="String" parameterType="String">
+		select
+		citydata from t_weather where cityName= #{cityName,jdbcType=VARCHAR}
+		limit 0,1 
+	</select>
+</mapper>

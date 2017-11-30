@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/mvc
+	http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
+
+
+	
+
+	
+	<bean id="jobFactory" class="com.deyuan.weather.quartz.JobFactory"></bean>
+	<bean name="scheduleJob"
+		class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+		<property name="jobClass" value="com.deyuan.weather.quartz.WeatherDataRefreshJob" />
+		<property name="durability" value="true"></property>
+	</bean>
+
+	<bean id="scheduleJobTriggers"
+		class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+		<property name="jobDetail">
+			<ref bean="scheduleJob" />
+		</property>
+		<property name="startDelay" value="60"></property> 
+		<property name="cronExpression">
+			<value>0 */${interval} *  * * ?</value>
+		</property>
+	</bean>
+
+	<bean id="schedulerFactoryBean"
+		class="org.springframework.scheduling.quartz.SchedulerFactoryBean"
+		destroy-method="destroy">
+		<property name="jobFactory" ref="jobFactory" />
+		<property name="triggers">
+			<list>
+				<ref bean="scheduleJobTriggers" />
+			</list>
+		</property>
+		<property name="applicationContextSchedulerContextKey" value="applicationContext" />
+		<property name="configLocation" value="classpath:quartz.properties" />
+	</bean>
+
+
+</beans>
